@@ -3,8 +3,8 @@ import { PieChart, Pie, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaCh
 import { createClient } from "@supabase/supabase-js";
 
 /* ─── Supabase Client ─── */
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || "";
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || "";
+const supabaseUrl = "https://kvywvqqmcftdtlnsfqae.supabase.co";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt2eXd2cXFtY2Z0ZHRsbnNmcWFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMyNTQwODUsImV4cCI6MjA4ODgzMDA4NX0.8kv-x1lvAPOTKTl_VI3NCB_X9ra3MXtb29VlxRVuj8U";
 const supabase = supabaseUrl ? createClient(supabaseUrl, supabaseKey) : null;
 
 /* ─── Auth Hook ─── */
